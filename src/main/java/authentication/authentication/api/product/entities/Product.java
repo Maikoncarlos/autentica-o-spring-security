@@ -1,4 +1,4 @@
-package authentication.authentication.modules.user.entities;
+package authentication.authentication.api.product.entities;
 
 import java.util.UUID;
 
@@ -7,24 +7,20 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "roles")
-@AllArgsConstructor
-@NoArgsConstructor
+@Table(name = "products")
 @Data
-public class Role {
+public class Product {
 
   @Id
   @GeneratedValue
   private UUID id;
   private String name;
 
-  public Role(UUID id) {
-    this.id = id;
-  }
+  private String description;
+
+  private String sku;
 
 }

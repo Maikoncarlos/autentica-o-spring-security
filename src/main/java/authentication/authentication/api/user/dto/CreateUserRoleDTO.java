@@ -1,4 +1,4 @@
-package authentication.authentication.modules.user.dto;
+package authentication.authentication.api.user.dto;
 
 import java.util.List;
 import java.util.UUID;

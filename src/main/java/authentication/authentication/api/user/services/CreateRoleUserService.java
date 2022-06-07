@@ -1,4 +1,4 @@
-package authentication.authentication.modules.user.services;
+package authentication.authentication.api.user.services;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,10 +8,10 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import authentication.authentication.modules.user.UserRepository;
-import authentication.authentication.modules.user.dto.CreateUserRoleDTO;
-import authentication.authentication.modules.user.entities.Role;
-import authentication.authentication.modules.user.entities.User;
+import authentication.authentication.api.user.repositories.UserRepository;
+import authentication.authentication.api.user.dto.CreateUserRoleDTO;
+import authentication.authentication.api.user.entities.Role;
+import authentication.authentication.api.user.entities.User;
 
 @Service
 public class CreateRoleUserService {
